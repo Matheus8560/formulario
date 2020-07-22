@@ -1,0 +1,55 @@
+.Formulario {
+    background-color: white;
+    border-radius: 20px;
+    padding: 50px;
+    width: 500px;
+}
+.Formulario h1{
+  margin-top: 0px;
+  text-align: center;
+}
+
+.formControl{
+  margin: 10px 0px;
+  display: inline;
+}
+
+
+
+.input{
+  height: 30px;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+#nome{width: 100%;}
+#email{width: 100%;}
+
+.erro{
+  color: crimson;
+  font-size: 15px;
+}
+#btn{
+  border-radius: 15px;
+  background-color: #20222a;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;transition: 0.5s;
+}
+
+#btn:hover{
+  background: #353946;
+  transition: 0.5s;
+}
+
+#btn:disabled{
+  border: 3px solid #20222a88;
+  color: #20222a;
+  background: transparent;
+  cursor: default;
+}
+
+
+
