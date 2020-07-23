@@ -39,33 +39,31 @@ import './style.css';
                       />
                       <ErrorMessage component='div' className='erro' name="email" />
                     </div>
-
-                    <div className='grid'>
-                      <div className="formControl">                    
-                        <Field 
-                          className='input'
-                          placeholder='CPF'
-                          name="cpf" 
-                          type="text"
-                          onChange={(ev) => Masks.maskCpf(ev, formik)}
-                          maxLength={14}
-                        />
-                        <ErrorMessage component='div' className='erro' name="cpf" />
-                      </div>
-                      
-                      <div className="formControl">                 
-                        <Field 
-                          className='input'
-                          placeholder='Telefone'
-                          name="tel"
-                          type="text"
-                          onChange={(ev) => Masks.maskTel(ev, formik)}
-                          maxLength={15}   
-                        />
-                        <ErrorMessage component='div' className='erro' name="tel" />
-                      </div>
+                    
+                    <div className="formControl">                    
+                      <Field 
+                        className='input'
+                        placeholder='CPF'
+                        name="cpf" 
+                        type="text"
+                        onChange={(ev) => Masks.maskCpf(ev, formik)}
+                        maxLength={14}
+                      />
+                      <ErrorMessage component='div' className='erro' name="cpf" />
                     </div>
-
+                    
+                    <div className="formControl">                 
+                      <Field 
+                        className='input'
+                        placeholder='Telefone'
+                        name="tel"
+                        type="text"
+                        onChange={(ev) => Masks.maskTel(ev, formik)}
+                        maxLength={15}   
+                      />
+                      <ErrorMessage component='div' className='erro' name="tel" />
+                    </div>
+  
                     <div className='formControl'>
                       
                       <Field 
@@ -107,6 +105,7 @@ import './style.css';
                       placeholder='Rua' 
                       name="rua" 
                       type="text" />
+                      <ErrorMessage component='div' className='erro' name="rua" />
                   </div>
   
                   <div className='formControl'>
@@ -115,6 +114,7 @@ import './style.css';
                       placeholder='Nº'
                       name="numero" 
                       type="number" />
+                      <ErrorMessage component='div' className='erro' name="numero" />
                   </div>
   
                   <div className='formControl'> 
@@ -123,6 +123,7 @@ import './style.css';
                       placeholder='Complemento'
                       name="comp" 
                       type="text" />
+                    <ErrorMessage component='div' className='erro' name="comp" />   
                   </div>
   
                   <div className='formControl'>                  
@@ -130,8 +131,9 @@ import './style.css';
                       className='input'
                       placeholder='Bairro'
                       name="bairro" 
-                      type="text" 
+                      type="text"   
                     />
+                    <ErrorMessage component='div' className='erro' name="bairro" />
                   </div>
   
                   <div className='formControl'> 
@@ -139,7 +141,9 @@ import './style.css';
                       className='input'
                       placeholder='Cidade'
                       name="cidade" 
-                      type="text" />
+                      type="text" 
+                    />
+                    <ErrorMessage component='div' className='erro' name="cidade" />
                   </div>
   
                   <div className='formControl'>
@@ -148,6 +152,7 @@ import './style.css';
                       placeholder='Estado'
                       name="estado" 
                       type="text" />
+                      <ErrorMessage component='div' className='erro' name="estado" />
                   </div>
   
                   <button id='btn' type="submit" disabled={!formik.dirty || !formik.isValid}>Cadastrar</button>
