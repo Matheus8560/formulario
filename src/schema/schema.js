@@ -31,7 +31,7 @@ export default Yup.object().shape({
             /^.*(?=.{8,})(?=.*\d)((?=.*[a-z]){1}).*$/,
             "Deve conter letras, numeros e um minimo de 8 caracteres!"
         ),
-    confsenha: Yup
+    conf_senha: Yup
         .string()
         .required('Este campo é obrigatório!')
         .oneOf([Yup.ref("senha"), null], "A senha deve ser a mesma!"),
