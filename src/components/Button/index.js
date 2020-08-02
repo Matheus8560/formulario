@@ -17,7 +17,7 @@ const Button = styled.button`
   &:disabled{
   border: 3px solid #20222a88;
   color: #20222a;
-  background: transparent;
+  background: #20222a38;
   cursor: default;
   }
 `
